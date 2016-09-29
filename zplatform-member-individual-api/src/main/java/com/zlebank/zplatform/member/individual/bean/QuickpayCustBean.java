@@ -13,7 +13,7 @@ package com.zlebank.zplatform.member.individual.bean;
 import java.io.Serializable;
 
 /**
- * Class Description
+ * 会员绑卡数据
  *
  * @author Luxiaoshuai
  * @version

@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.zlebank.zplatform.commons.utils.BeanCopyUtil;
-import com.zlebank.zplatform.member.individual.bean.Person;
+import com.zlebank.zplatform.member.individual.bean.PersonBean;
 import com.zlebank.zplatform.member.individual.bean.PersonManager;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberStatusType;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
@@ -58,7 +58,7 @@ public class PersonServiceImpl implements PersonService {
 	 */
 	@Override
 	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
-	public String save(Person pers, long userId)
+	public String save(PersonBean pers, long userId)
 			throws MemberBussinessException {
 		// 验证手机号是否存在
 		if (persondao.getPersonByPhone(pers.getPhone()) != null) {
@@ -103,9 +103,9 @@ public class PersonServiceImpl implements PersonService {
 	 * @return
 	 */
 	@Override
-	public Person getPersonByPhone(String phone) {
+	public PersonBean getPersonByPhone(String phone) {
 		PojoPersonDeta person = persondao.getPersonByPhone(phone);
-		return BeanCopyUtil.copyBean(Person.class, person);
+		return BeanCopyUtil.copyBean(PersonBean.class, person);
 	}
 
 	/**
@@ -114,9 +114,9 @@ public class PersonServiceImpl implements PersonService {
 	 * @return
 	 */
 	@Override
-	public Person getPersonByEmail(String email) {
+	public PersonBean getPersonByEmail(String email) {
 		PojoPersonDeta person = persondao.getPersonByEmail(email);
-		return BeanCopyUtil.copyBean(Person.class, person);
+		return BeanCopyUtil.copyBean(PersonBean.class, person);
 	}
 
 	/**
@@ -143,9 +143,9 @@ public class PersonServiceImpl implements PersonService {
 	 * @return
 	 */
 	@Override
-	public Person getPersonByMemberId(String memberId) {
+	public PersonBean getPersonByMemberId(String memberId) {
 		PojoPersonDeta person = persondao.getPersonByMemberId(memberId);
-		return BeanCopyUtil.copyBean(Person.class, person);
+		return BeanCopyUtil.copyBean(PersonBean.class, person);
 	}
 
 }

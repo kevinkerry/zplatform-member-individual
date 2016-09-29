@@ -10,7 +10,7 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
-import com.zlebank.zplatform.member.individual.bean.Person;
+import com.zlebank.zplatform.member.individual.bean.PersonBean;
 import com.zlebank.zplatform.member.individual.bean.PersonManager;
 import com.zlebank.zplatform.member.individual.exception.MemberBussinessException;
 
@@ -29,20 +29,20 @@ public interface PersonService {
      * @param pers
      * @return busiCode
      */
-    public String save(Person pers,long userId)throws MemberBussinessException;
+    public String save(PersonBean pers,long userId)throws MemberBussinessException;
 
     /**
      * 通过手机号查询会员信息
      * @param phone
      * @return
      */
-    public Person getPersonByPhone(String phone);
+    public PersonBean getPersonByPhone(String phone);
        /**
         * 通过emal查询会员信息
         * @param email
         * @return
         */
-    public Person getPersonByEmail(String email);
+    public PersonBean getPersonByEmail(String email);
     
         /**
          * 通过memberId得到会员信息
@@ -56,5 +56,5 @@ public interface PersonService {
      * @param memberId
      * @return
      */
-    public Person getPersonByMemberId(String memberId);
+    public PersonBean getPersonByMemberId(String memberId);
 }

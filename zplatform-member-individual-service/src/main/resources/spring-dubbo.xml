@@ -7,4 +7,5 @@
 	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberApplyService" ref="memberApplyService" retries="3" version="1.0"/>
 	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberOperationService" ref="memberOperationService" retries="3" version="1.0"/>
 	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberBankCardService" ref="memberBankCardService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberInfoService" ref="memberInfoService" retries="3" version="1.0"/>
 </beans>

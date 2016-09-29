@@ -25,7 +25,7 @@ import com.zlebank.zplatform.commons.utils.Md5;
 import com.zlebank.zplatform.commons.utils.RegExpValidatorUtil;
 import com.zlebank.zplatform.commons.utils.StringUtil;
 import com.zlebank.zplatform.member.individual.bean.MemberBean;
-import com.zlebank.zplatform.member.individual.bean.Person;
+import com.zlebank.zplatform.member.individual.bean.PersonBean;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberStatusType;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 import com.zlebank.zplatform.member.individual.bean.enums.RealNameLvType;
@@ -166,7 +166,7 @@ public class MemberOperationServiceImpl implements MemberOperationService {
     private String saveMemberData(MemberType memberType, MemberBean bean) throws CreateMemberFailedException, InvalidMemberDataException {
         String memberId="";
         // 个人会员开通
-        if (MemberType.INDIVIDUAL == memberType && bean instanceof Person) {
+        if (MemberType.INDIVIDUAL == memberType && bean instanceof PersonBean) {
             try {
                 memberId = primayService.getNexId(PERSONPARATYPE, MEMBER_IDSEQUENCES);
             } catch (PrimaykeyGeneratedException e) {
@@ -180,7 +180,7 @@ public class MemberOperationServiceImpl implements MemberOperationService {
             pojo.setParentMemberId(memberId);// 会员ID
             
             setMemberComm(pojo, bean, memberType); // T_member 属性设定
-            Person personBean = (Person)bean;
+            PersonBean personBean = (PersonBean)bean;
             pojo.setSex(personBean.getSex());// 性别
             pojo.setTelno(personBean.getTelno());// 固定电话
             pojo.setFaxno(personBean.getFaxno());// 传真

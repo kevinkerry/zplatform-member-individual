@@ -16,15 +16,15 @@ import java.util.Date;
 import com.zlebank.zplatform.member.individual.bean.enums.SexType;
 
 /**
- * 个人会员
+ * 个人会员-个人详细信息
+ * 
  *
- * @author yangpeng
+ * @author guojia
  * @version
- * @date 2015年9月9日 下午5:49:47
- * @since 
+ * @date 2016年9月28日 上午11:05:28
+ * @since
  */
-
-public class Person  extends MemberBean implements Serializable{
+public class PersonBean  extends MemberBean implements Serializable{
 
     /**
      * serialVersionUID
