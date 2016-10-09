@@ -10,6 +10,7 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
+import com.zlebank.zplatform.member.individual.bean.MemberApplyBean;
 import com.zlebank.zplatform.member.individual.bean.MemberBean;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 
@@ -63,5 +64,16 @@ public interface MemberInfoService {
      */
     public MemberBean getMemberByPhoneAndCoopInsti(String phone, long instiCode);
 
+    /**
+     * 更新会员信息
+     * @param memberBean
+     */
+    public void updateMemberInfo(MemberBean memberBean);
     
+    /**
+     * 保存会员申请数据
+     * @param memberApplyBean
+     * @return
+     */
+    public MemberApplyBean saveMemberApply(MemberApplyBean memberApplyBean);
 }
