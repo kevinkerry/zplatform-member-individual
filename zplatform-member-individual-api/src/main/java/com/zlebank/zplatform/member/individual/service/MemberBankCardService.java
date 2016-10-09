@@ -10,11 +10,11 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
-import com.zlebank.zplatform.commons.bean.PagedResult;
+import com.zlebank.zplatform.member.commons.bean.PagedResult;
+import com.zlebank.zplatform.member.exception.DataCheckFailedException;
+import com.zlebank.zplatform.member.exception.UnbindBankFailedException;
 import com.zlebank.zplatform.member.individual.bean.QuickpayCustBean;
 import com.zlebank.zplatform.member.individual.bean.RealNameBean;
-import com.zlebank.zplatform.member.individual.exception.DataCheckFailedException;
-import com.zlebank.zplatform.member.individual.exception.UnbindBankFailedException;
 
 /**
  * 会员银行卡相关服务

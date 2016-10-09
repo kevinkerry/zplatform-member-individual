@@ -13,7 +13,7 @@ package com.zlebank.zplatform.member.individual.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.zlebank.zplatform.commons.utils.BeanCopyUtil;
+import com.zlebank.zplatform.member.commons.utils.BeanCopyUtil;
 import com.zlebank.zplatform.member.individual.bean.MemberBean;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 import com.zlebank.zplatform.member.individual.dao.MemberDAO;

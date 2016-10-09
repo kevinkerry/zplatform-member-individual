@@ -10,7 +10,7 @@
  */
 package com.zlebank.zplatform.member.individual.dao;
 
-import com.zlebank.zplatform.commons.dao.BasePagedQueryDAO;
+import com.zlebank.zplatform.member.commons.dao.BasePagedQueryDAO;
 import com.zlebank.zplatform.member.individual.bean.QuickpayCustBean;
 import com.zlebank.zplatform.member.individual.pojo.PojoQuickpayCust;
 

@@ -10,7 +10,10 @@
         <dependent-module archiveName="zplatform-member-individual-api-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zplatform-member-individual-api/zplatform-member-individual-api">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="zplatform-commons-1.5.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zplatform-commons/zplatform-commons">
+        <dependent-module archiveName="zplatform-member-commons-api-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zplatform-member-commons-api/zplatform-member-commons-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zplatform-member-commons-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zplatform-member-commons/zplatform-member-commons">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="zplatform-member-individual-service"/>

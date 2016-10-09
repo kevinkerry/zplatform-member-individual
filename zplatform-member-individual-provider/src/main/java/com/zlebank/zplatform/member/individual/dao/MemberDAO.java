@@ -10,7 +10,7 @@
  */
 package com.zlebank.zplatform.member.individual.dao;
 
-import com.zlebank.zplatform.commons.dao.BaseDAO;
+import com.zlebank.zplatform.member.commons.dao.BaseDAO;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 import com.zlebank.zplatform.member.individual.pojo.PojoMember;
 

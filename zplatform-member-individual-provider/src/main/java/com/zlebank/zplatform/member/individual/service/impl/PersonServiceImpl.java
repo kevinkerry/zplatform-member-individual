@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.zlebank.zplatform.commons.utils.BeanCopyUtil;
+import com.zlebank.zplatform.member.commons.utils.BeanCopyUtil;
+import com.zlebank.zplatform.member.exception.MemberBussinessException;
 import com.zlebank.zplatform.member.individual.bean.PersonBean;
 import com.zlebank.zplatform.member.individual.bean.PersonManager;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberStatusType;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 import com.zlebank.zplatform.member.individual.dao.PersonDAO;
-import com.zlebank.zplatform.member.individual.exception.MemberBussinessException;
 import com.zlebank.zplatform.member.individual.pojo.PojoPersonDeta;
 import com.zlebank.zplatform.member.individual.service.PersonService;
 import com.zlebank.zplatform.member.individual.service.PrimayKeyService;

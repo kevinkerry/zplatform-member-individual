@@ -10,9 +10,9 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
+import com.zlebank.zplatform.member.exception.MemberBussinessException;
 import com.zlebank.zplatform.member.individual.bean.PersonBean;
 import com.zlebank.zplatform.member.individual.bean.PersonManager;
-import com.zlebank.zplatform.member.individual.exception.MemberBussinessException;
 
 
 /**

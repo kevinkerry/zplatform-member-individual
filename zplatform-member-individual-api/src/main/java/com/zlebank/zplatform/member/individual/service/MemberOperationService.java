@@ -10,13 +10,13 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
+import com.zlebank.zplatform.member.exception.CreateBusiAcctFailedException;
+import com.zlebank.zplatform.member.exception.CreateMemberFailedException;
+import com.zlebank.zplatform.member.exception.DataCheckFailedException;
+import com.zlebank.zplatform.member.exception.InvalidMemberDataException;
+import com.zlebank.zplatform.member.exception.LoginFailedException;
 import com.zlebank.zplatform.member.individual.bean.MemberBean;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
-import com.zlebank.zplatform.member.individual.exception.CreateBusiAcctFailedException;
-import com.zlebank.zplatform.member.individual.exception.CreateMemberFailedException;
-import com.zlebank.zplatform.member.individual.exception.DataCheckFailedException;
-import com.zlebank.zplatform.member.individual.exception.InvalidMemberDataException;
-import com.zlebank.zplatform.member.individual.exception.LoginFailedException;
 
 /**
  * 会员注册

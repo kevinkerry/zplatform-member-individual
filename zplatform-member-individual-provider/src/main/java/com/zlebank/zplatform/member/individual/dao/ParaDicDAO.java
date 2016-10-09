@@ -13,7 +13,7 @@ package com.zlebank.zplatform.member.individual.dao;
 import java.util.List;
 import java.util.Map;
 
-import com.zlebank.zplatform.commons.dao.BaseDAO;
+import com.zlebank.zplatform.member.commons.dao.BaseDAO;
 import com.zlebank.zplatform.member.individual.pojo.PojoParaDic;
 
 /**

@@ -10,8 +10,8 @@
  */
 package com.zlebank.zplatform.member.individual.service;
 
-import com.zlebank.zplatform.member.individual.exception.MemberBussinessException;
-import com.zlebank.zplatform.member.individual.exception.PrimaykeyGeneratedException;
+import com.zlebank.zplatform.member.exception.MemberBussinessException;
+import com.zlebank.zplatform.member.exception.PrimaykeyGeneratedException;
 
 
 /**

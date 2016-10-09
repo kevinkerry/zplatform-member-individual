@@ -15,8 +15,8 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.zlebank.zplatform.commons.dao.impl.AbstractPagedQueryDAOImpl;
-import com.zlebank.zplatform.commons.utils.StringUtil;
+import com.zlebank.zplatform.member.commons.dao.impl.AbstractPagedQueryDAOImpl;
+import com.zlebank.zplatform.member.commons.utils.StringUtil;
 import com.zlebank.zplatform.member.individual.bean.QuickpayCustBean;
 import com.zlebank.zplatform.member.individual.dao.QuickpayCustDAO;
 import com.zlebank.zplatform.member.individual.pojo.PojoQuickpayCust;

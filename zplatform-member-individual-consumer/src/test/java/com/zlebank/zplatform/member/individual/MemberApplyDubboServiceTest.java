@@ -20,11 +20,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.alibaba.fastjson.JSON;
+import com.zlebank.zplatform.member.exception.CreateBusiAcctFailedException;
+import com.zlebank.zplatform.member.exception.CreateMemberFailedException;
+import com.zlebank.zplatform.member.exception.InvalidMemberDataException;
 import com.zlebank.zplatform.member.individual.bean.MemberBean;
 import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
-import com.zlebank.zplatform.member.individual.exception.CreateBusiAcctFailedException;
-import com.zlebank.zplatform.member.individual.exception.CreateMemberFailedException;
-import com.zlebank.zplatform.member.individual.exception.InvalidMemberDataException;
 import com.zlebank.zplatform.member.individual.service.MemberApplyService;
 import com.zlebank.zplatform.member.individual.service.MemberOperationService;
 

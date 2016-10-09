@@ -8,7 +8,8 @@ import org.hibernate.transform.Transformers;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.zlebank.zplatform.commons.dao.impl.HibernateBaseDAOImpl;
+import com.zlebank.zplatform.member.commons.dao.impl.HibernateBaseDAOImpl;
+import com.zlebank.zplatform.member.exception.MemberBussinessException;
 import com.zlebank.zplatform.member.individual.dao.ParaDicDAO;
 import com.zlebank.zplatform.member.individual.pojo.PojoParaDic;
 

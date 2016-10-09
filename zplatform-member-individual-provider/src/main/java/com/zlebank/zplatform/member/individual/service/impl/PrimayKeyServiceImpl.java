@@ -19,9 +19,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.zlebank.zplatform.member.exception.MemberBussinessException;
+import com.zlebank.zplatform.member.exception.PrimaykeyGeneratedException;
 import com.zlebank.zplatform.member.individual.dao.ParaDicDAO;
-import com.zlebank.zplatform.member.individual.exception.MemberBussinessException;
-import com.zlebank.zplatform.member.individual.exception.PrimaykeyGeneratedException;
 import com.zlebank.zplatform.member.individual.pojo.PojoParaDic;
 import com.zlebank.zplatform.member.individual.service.PrimayKeyService;
 import com.zlebank.zplatform.member.individual.util.MemberUtil;

@@ -17,7 +17,7 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import com.zlebank.zplatform.commons.dao.impl.HibernateBaseDAOImpl;
+import com.zlebank.zplatform.member.commons.dao.impl.HibernateBaseDAOImpl;
 import com.zlebank.zplatform.member.individual.dao.MemberApplyDAO;
 import com.zlebank.zplatform.member.individual.pojo.PojoMemberApply;
 
