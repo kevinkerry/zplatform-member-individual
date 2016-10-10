@@ -8,7 +8,7 @@
  * Copyright (c) 2016,zlebank.All rights reserved.
  * 
  */
-package com.zlebank.zplatform.rmi.utils;
+package com.zlebank.zplatform.utils;
 
 import java.lang.reflect.Method;
 
